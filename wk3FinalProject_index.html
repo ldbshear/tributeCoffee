@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Coveted Coffee</title>
+
+    <style>
+      /* Remove default margin */
+      body,
+      h1,
+      h2,
+      h3,
+      h4,
+      p,
+      li,
+      figure,
+      figcaption,
+      blockquote,
+      dl,
+      dd {
+        margin: 0;
+      }
+
+      body {
+        background-color: #fffffd;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      h1 {
+        color: #fffffd;
+        font-size: 4.15em;
+        font-weight: 600;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 1.85em;
+        margin-top: 20px;
+        text-transform: capitalize;
+        font-weight: 500;
+      }
+
+      h3 {
+        margin-top: 10px;
+      }
+
+      header {
+        background: linear-gradient(
+          109.6deg,
+          rgb(162, 2, 63) 11.2%,
+          rgb(231, 62, 68) 53.6%,
+          rgb(255, 129, 79) 91.1%
+        );
+        color: #fffffd;
+        height: 550px;
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav,
+      footer {
+        height: 75px;
+      }
+
+      ul {
+        list-style: none;
+        text-align: center;
+        padding: 0;
+        margin: 45px 0 30px 0;
+      }
+
+      li {
+        display: inline;
+        padding: 10px 15px;
+        font-size: 1.15em;
+
+        background-image: linear-gradient(
+          109.6deg,
+          rgb(162, 2, 63) 11.2%,
+          rgb(231, 62, 68) 53.6%,
+          rgb(255, 129, 79) 91.1%
+        );
+
+        background-size: 0% 0.1em;
+        background-position-x: 50%;
+        background-position-y: 100%;
+        background-repeat: no-repeat;
+        transition: background-size 0.25s ease-in-out;
+      }
+
+      li:hover {
+        background-size: 100% 0.1em;
+      }
+
+      a {
+        text-decoration: none;
+        cursor: pointer;
+      }
+
+      button {
+        color: #48413b;
+        outline: none;
+        background-color: #fffffd;
+        border-radius: 4px;
+        border: 1px solid #fffffd;
+        padding: 10px 40px;
+        margin-top: 35px;
+        margin-bottom: 15px;
+        box-shadow: 1px 3px 3px #48413b;
+        font-size: 16px;
+        transition: all 175ms ease-in-out;
+      }
+
+      button:hover {
+        cursor: pointer;
+        box-shadow: 3px 5px 5px #48413b;
+      }
+
+      footer {
+        text-align: center;
+        font-size: 1.15em;
+        padding-top: 30px;
+      }
+
+      .logo {
+        color: #48413b;
+        margin-top: 20px;
+        margin-left: 35px;
+        font-size: 2em;
+        font-weight: 700;
+      }
+
+      .mainImg {
+        width: 425px;
+        min-width: 225px;
+        margin-right: 25px;
+      }
+
+      .mainTitle {
+        display: flex;
+        flex-direction: column;
+        height: 410px;
+      }
+
+      .mainPara {
+        font-size: 1.15em;
+        line-height: 1.8;
+        margin-top: 30px;
+        width: 275px;
+        padding-bottom: 30px;
+        border-bottom: 2px solid #fffffd;
+      }
+      .secondMainPara {
+        font-size: 1.15em;
+        line-height: 1.8;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 275px;
+      }
+
+      .midSection {
+        color: #48413b;
+        height: 250px;
+      }
+
+      .midImg {
+        width: 250px;
+        min-width: 175px;
+        margin-top: 30px;
+        margin-bottom: 10px;
+      }
+
+      .midSectionEmojis {
+        display: inline-block;
+      }
+
+      .emojis {
+        font-size: 24px;
+      }
+
+      .coffeeArticle {
+        text-align: center;
+        margin: 60px auto 10px auto;
+      }
+
+      .closing {
+        background: linear-gradient(
+          109.6deg,
+          rgb(162, 2, 63) 11.2%,
+          rgb(231, 62, 68) 53.6%,
+          rgb(255, 129, 79) 91.1%
+        );
+        color: #fffffd;
+
+        height: 400px;
+        margin: 0 auto;
+        text-align: center;
+      }
+
+      @media (max-width: 545px) {
+        header {
+          flex-direction: column;
+        }
+        li {
+          display: block;
+        }
+
+        .mainImg {
+          width: 225px;
+          margin-top: 25px;
+        }
+
+        .midSection {
+          color: #48413b;
+          height: 450px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">💖Coffee</div>
+    </nav>
+    <header>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/856/original/25-255943_mug-png-high-quality-image-3d-coffee-cup.png?1643401204"
+        alt="Perfect cup of coffee."
+        class="mainImg"
+      />
+      <div class="mainTitle">
+        <h1>Coffee</h1>
+        <p class="mainPara">
+          Beloved. <em>Unique</em>. Energizing. A popular drink, counted on by
+        </p>
+        <p class="secondMainPara">
+          Students, professionals, and parents, to get through the day.
+        </p>
+      </div>
+    </header>
+
+    <div class="sublevel midSection">
+      <h2>The only cup you need</h2>
+
+      <ul>
+        <li>
+          <div class="midSectionEmojis">
+            <span class="emojis">⚡ </span>
+            <p>Boost energy levels</p>
+          </div>
+        </li>
+        <li>
+          <div class="midSectionEmojis">
+            <span class="emojis">🎓</span>
+            <p>Support brain health</p>
+          </div>
+        </li>
+        <li>
+          <div class="midSectionEmojis">
+            <span class="emojis">⚖</span>
+            <p>Promote weight management</p>
+          </div>
+        </li>
+      </ul>
+      <p class="coffeeArticle">
+        To read the full article, click on the coffee cup below.
+      </p>
+    </div>
+
+    <div class="closing">
+      <a
+        href="https://www.healthline.com/nutrition/top-13-evidence-based-health-benefits-of-coffee"
+        ><img
+          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/025/857/original/coffee-cup-transparent-background-20.png?1643401249"
+          alt="cup of cappucino"
+          class="midImg"
+      /></a>
+      <h3>Coffee</h3>
+      <p>Gain a better perspective from one cup.</p>
+
+      <button>Discover more</button>
+    </div>
+    <footer>
+      <strong>Coded by</strong> <br /><em>Louisa Blackshear-Jones</em>
+    </footer>
+    <script>
+      function getUserInfo() {
+        name = prompt("Please enter your name:");
+        let email = prompt("Please enter your email address: ");
+
+        if (name.length > 0) {
+          updateH2(`Thank you ${name} your email is added to our list!`);
+        } else {
+          alert(
+            "You did not enter your name. You can not be added to our mailing list."
+          );
+        }
+      }
+
+      function updateH2(newH2) {
+        let changeH2 = document.querySelector("h2");
+        changeH2.innerHTML = newH2;
+      }
+
+      let discoverButton = document.querySelector("button");
+      discoverButton.addEventListener("click", getUserInfo);
+    </script>
+  </body>
+</html>
